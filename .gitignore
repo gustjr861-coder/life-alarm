@@ -1,0 +1,19 @@
+# LifeAlarm
+xcuserdata/
+*.xcuserstate
+DerivedData/
+.build/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# Secrets — 실제 토큰이 들어간 파일은 커밋하지 마세요
+server/.env
+server/data/
+server/node_modules/

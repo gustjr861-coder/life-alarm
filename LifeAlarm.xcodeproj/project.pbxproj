@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10000000000000000000001 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000001 /* App.swift */; };
+		B10000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000002 /* ContentView.swift */; };
+		B10000000000000000000003 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000003 /* Reminder.swift */; };
+		B10000000000000000000004 /* RepeatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000004 /* RepeatRule.swift */; };
+		B10000000000000000000005 /* ReminderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000005 /* ReminderStyle.swift */; };
+		B10000000000000000000006 /* SortOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000006 /* SortOption.swift */; };
+		B10000000000000000000007 /* ReminderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000007 /* ReminderViewModel.swift */; };
+		B10000000000000000000008 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000008 /* NotificationManager.swift */; };
+		B10000000000000000000009 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000009 /* StorageManager.swift */; };
+		B1000000000000000000000A /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000000A /* AppConstants.swift */; };
+		B1000000000000000000000B /* DateCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000000B /* DateCalculator.swift */; };
+		B1000000000000000000000C /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000000C /* Date+Extensions.swift */; };
+		B1000000000000000000000D /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000000D /* View+Extensions.swift */; };
+		B1000000000000000000000E /* ReminderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000000E /* ReminderCardView.swift */; };
+		B1000000000000000000000F /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000000F /* EmptyStateView.swift */; };
+		B10000000000000000000010 /* PermissionBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000010 /* PermissionBannerView.swift */; };
+		B10000000000000000000011 /* StatsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000011 /* StatsHeaderView.swift */; };
+		B10000000000000000000012 /* StylePickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000012 /* StylePickersView.swift */; };
+		B10000000000000000000013 /* RepeatPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000013 /* RepeatPickerView.swift */; };
+		B10000000000000000000014 /* ReminderFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000014 /* ReminderFormView.swift */; };
+		B10000000000000000000015 /* AllRemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000015 /* AllRemindersView.swift */; };
+		B10000000000000000000016 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000016 /* HomeView.swift */; };
+		B10000000000000000000017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000017 /* Assets.xcassets */; };
+		B10000000000000000000018 /* LifeAlarmWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000018 /* LifeAlarmWidget.swift */; };
+		B10000000000000000000019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000019 /* Assets.xcassets */; };
+		B1000000000000000000001A /* LifeAlarmWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D10000000000000000000003 /* LifeAlarmWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B1000000000000000000001B /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000003 /* Reminder.swift */; };
+		B1000000000000000000001C /* RepeatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000004 /* RepeatRule.swift */; };
+		B1000000000000000000001D /* ReminderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000005 /* ReminderStyle.swift */; };
+		B1000000000000000000001E /* SortOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000006 /* SortOption.swift */; };
+		B1000000000000000000001F /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000009 /* StorageManager.swift */; };
+		B10000000000000000000020 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000000A /* AppConstants.swift */; };
+		B10000000000000000000021 /* DateCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000000B /* DateCalculator.swift */; };
+		B10000000000000000000022 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1000000000000000000000C /* Date+Extensions.swift */; };
+		B10000000000000000000023 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000023 /* AppConfig.swift */; };
+		B10000000000000000000024 /* ScheduleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000024 /* ScheduleDTO.swift */; };
+		B10000000000000000000025 /* TelegramManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000025 /* TelegramManager.swift */; };
+		B10000000000000000000026 /* ScheduleAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000026 /* ScheduleAPIClient.swift */; };
+		B10000000000000000000027 /* TelegramForegroundScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000027 /* TelegramForegroundScheduler.swift */; };
+		B10000000000000000000028 /* TelegramSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000028 /* TelegramSettingsView.swift */; };
+		B10000000000000000000029 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000029 /* Secrets.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E10000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A10000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D10000000000000000000002;
+			remoteInfo = LifeAlarmWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F10000000000000000000001 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B1000000000000000000001A /* LifeAlarmWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C10000000000000000000001 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		C10000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C10000000000000000000003 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		C10000000000000000000004 /* RepeatRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatRule.swift; sourceTree = "<group>"; };
+		C10000000000000000000005 /* ReminderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStyle.swift; sourceTree = "<group>"; };
+		C10000000000000000000006 /* SortOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOption.swift; sourceTree = "<group>"; };
+		C10000000000000000000007 /* ReminderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewModel.swift; sourceTree = "<group>"; };
+		C10000000000000000000008 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		C10000000000000000000009 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		C1000000000000000000000A /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		C1000000000000000000000B /* DateCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCalculator.swift; sourceTree = "<group>"; };
+		C1000000000000000000000C /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		C1000000000000000000000D /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		C1000000000000000000000E /* ReminderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCardView.swift; sourceTree = "<group>"; };
+		C1000000000000000000000F /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		C10000000000000000000010 /* PermissionBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionBannerView.swift; sourceTree = "<group>"; };
+		C10000000000000000000011 /* StatsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsHeaderView.swift; sourceTree = "<group>"; };
+		C10000000000000000000012 /* StylePickersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylePickersView.swift; sourceTree = "<group>"; };
+		C10000000000000000000013 /* RepeatPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatPickerView.swift; sourceTree = "<group>"; };
+		C10000000000000000000014 /* ReminderFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormView.swift; sourceTree = "<group>"; };
+		C10000000000000000000015 /* AllRemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRemindersView.swift; sourceTree = "<group>"; };
+		C10000000000000000000016 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C10000000000000000000017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C10000000000000000000018 /* LifeAlarmWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeAlarmWidget.swift; sourceTree = "<group>"; };
+		C10000000000000000000019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1000000000000000000001A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1000000000000000000001B /* LifeAlarm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LifeAlarm.entitlements; sourceTree = "<group>"; };
+		C1000000000000000000001C /* LifeAlarmWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LifeAlarmWidget.entitlements; sourceTree = "<group>"; };
+		C10000000000000000000023 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		C10000000000000000000024 /* ScheduleDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDTO.swift; sourceTree = "<group>"; };
+		C10000000000000000000025 /* TelegramManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramManager.swift; sourceTree = "<group>"; };
+		C10000000000000000000026 /* ScheduleAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleAPIClient.swift; sourceTree = "<group>"; };
+		C10000000000000000000027 /* TelegramForegroundScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramForegroundScheduler.swift; sourceTree = "<group>"; };
+		C10000000000000000000028 /* TelegramSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramSettingsView.swift; sourceTree = "<group>"; };
+		C10000000000000000000029 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		C1000000000000000000002A /* Secrets.example.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.example.plist; sourceTree = "<group>"; };
+		D10000000000000000000001 /* LifeAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10000000000000000000003 /* LifeAlarmWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LifeAlarmWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F20000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F20000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G10000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				G10000000000000000000002 /* LifeAlarm */,
+				G10000000000000000000003 /* LifeAlarmWidget */,
+				G10000000000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G10000000000000000000002 /* LifeAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000001 /* App.swift */,
+				C10000000000000000000002 /* ContentView.swift */,
+				C1000000000000000000001B /* LifeAlarm.entitlements */,
+				C10000000000000000000017 /* Assets.xcassets */,
+				G1000000000000000000000F /* Config */,
+				G10000000000000000000005 /* Models */,
+				G10000000000000000000006 /* ViewModels */,
+				G10000000000000000000007 /* Managers */,
+				G10000000000000000000008 /* Utilities */,
+				G10000000000000000000009 /* Extensions */,
+				G1000000000000000000000A /* Views */,
+			);
+			path = LifeAlarm;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000003 /* LifeAlarmWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000018 /* LifeAlarmWidget.swift */,
+				C1000000000000000000001A /* Info.plist */,
+				C1000000000000000000001C /* LifeAlarmWidget.entitlements */,
+				C10000000000000000000019 /* Assets.xcassets */,
+			);
+			path = LifeAlarmWidget;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D10000000000000000000001 /* LifeAlarm.app */,
+				D10000000000000000000003 /* LifeAlarmWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000003 /* Reminder.swift */,
+				C10000000000000000000004 /* RepeatRule.swift */,
+				C10000000000000000000005 /* ReminderStyle.swift */,
+				C10000000000000000000006 /* SortOption.swift */,
+				C10000000000000000000024 /* ScheduleDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		G1000000000000000000000F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000023 /* AppConfig.swift */,
+				C10000000000000000000029 /* Secrets.plist */,
+				C1000000000000000000002A /* Secrets.example.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000006 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000007 /* ReminderViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000007 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000008 /* NotificationManager.swift */,
+				C10000000000000000000009 /* StorageManager.swift */,
+				C10000000000000000000025 /* TelegramManager.swift */,
+				C10000000000000000000026 /* ScheduleAPIClient.swift */,
+				C10000000000000000000027 /* TelegramForegroundScheduler.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000008 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C1000000000000000000000A /* AppConstants.swift */,
+				C1000000000000000000000B /* DateCalculator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000009 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C1000000000000000000000C /* Date+Extensions.swift */,
+				C1000000000000000000000D /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		G1000000000000000000000A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				G1000000000000000000000B /* Home */,
+				G1000000000000000000000C /* List */,
+				G1000000000000000000000D /* Form */,
+				G1000000000000000000000E /* Components */,
+				G10000000000000000000010 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		G10000000000000000000010 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000028 /* TelegramSettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		G1000000000000000000000B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000016 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		G1000000000000000000000C /* List */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000015 /* AllRemindersView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		G1000000000000000000000D /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000014 /* ReminderFormView.swift */,
+				C10000000000000000000013 /* RepeatPickerView.swift */,
+				C10000000000000000000012 /* StylePickersView.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		G1000000000000000000000E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C1000000000000000000000E /* ReminderCardView.swift */,
+				C1000000000000000000000F /* EmptyStateView.swift */,
+				C10000000000000000000010 /* PermissionBannerView.swift */,
+				C10000000000000000000011 /* StatsHeaderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D10000000000000000000004 /* LifeAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = H10000000000000000000003 /* Build configuration list for PBXNativeTarget "LifeAlarm" */;
+			buildPhases = (
+				F30000000000000000000001 /* Sources */,
+				F20000000000000000000001 /* Frameworks */,
+				F40000000000000000000001 /* Resources */,
+				F10000000000000000000001 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E20000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = LifeAlarm;
+			productName = LifeAlarm;
+			productReference = D10000000000000000000001 /* LifeAlarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D10000000000000000000002 /* LifeAlarmWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = H10000000000000000000004 /* Build configuration list for PBXNativeTarget "LifeAlarmWidgetExtension" */;
+			buildPhases = (
+				F30000000000000000000002 /* Sources */,
+				F20000000000000000000002 /* Frameworks */,
+				F40000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeAlarmWidgetExtension;
+			productName = LifeAlarmWidgetExtension;
+			productReference = D10000000000000000000003 /* LifeAlarmWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A10000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					D10000000000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					D10000000000000000000004 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = H10000000000000000000001 /* Build configuration list for PBXProject "LifeAlarm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ko,
+			);
+			mainGroup = G10000000000000000000001;
+			productRefGroup = G10000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D10000000000000000000004 /* LifeAlarm */,
+				D10000000000000000000002 /* LifeAlarmWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F40000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000017 /* Assets.xcassets in Resources */,
+				B10000000000000000000029 /* Secrets.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F40000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000019 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F30000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000001 /* App.swift in Sources */,
+				B10000000000000000000002 /* ContentView.swift in Sources */,
+				B10000000000000000000003 /* Reminder.swift in Sources */,
+				B10000000000000000000004 /* RepeatRule.swift in Sources */,
+				B10000000000000000000005 /* ReminderStyle.swift in Sources */,
+				B10000000000000000000006 /* SortOption.swift in Sources */,
+				B10000000000000000000007 /* ReminderViewModel.swift in Sources */,
+				B10000000000000000000008 /* NotificationManager.swift in Sources */,
+				B10000000000000000000009 /* StorageManager.swift in Sources */,
+				B1000000000000000000000A /* AppConstants.swift in Sources */,
+				B1000000000000000000000B /* DateCalculator.swift in Sources */,
+				B1000000000000000000000C /* Date+Extensions.swift in Sources */,
+				B1000000000000000000000D /* View+Extensions.swift in Sources */,
+				B1000000000000000000000E /* ReminderCardView.swift in Sources */,
+				B1000000000000000000000F /* EmptyStateView.swift in Sources */,
+				B10000000000000000000010 /* PermissionBannerView.swift in Sources */,
+				B10000000000000000000011 /* StatsHeaderView.swift in Sources */,
+				B10000000000000000000012 /* StylePickersView.swift in Sources */,
+				B10000000000000000000013 /* RepeatPickerView.swift in Sources */,
+				B10000000000000000000014 /* ReminderFormView.swift in Sources */,
+				B10000000000000000000015 /* AllRemindersView.swift in Sources */,
+				B10000000000000000000016 /* HomeView.swift in Sources */,
+				B10000000000000000000023 /* AppConfig.swift in Sources */,
+				B10000000000000000000024 /* ScheduleDTO.swift in Sources */,
+				B10000000000000000000025 /* TelegramManager.swift in Sources */,
+				B10000000000000000000026 /* ScheduleAPIClient.swift in Sources */,
+				B10000000000000000000027 /* TelegramForegroundScheduler.swift in Sources */,
+				B10000000000000000000028 /* TelegramSettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000018 /* LifeAlarmWidget.swift in Sources */,
+				B1000000000000000000001B /* Reminder.swift in Sources */,
+				B1000000000000000000001C /* RepeatRule.swift in Sources */,
+				B1000000000000000000001D /* ReminderStyle.swift in Sources */,
+				B1000000000000000000001E /* SortOption.swift in Sources */,
+				B1000000000000000000001F /* StorageManager.swift in Sources */,
+				B10000000000000000000020 /* AppConstants.swift in Sources */,
+				B10000000000000000000021 /* DateCalculator.swift in Sources */,
+				B10000000000000000000022 /* Date+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E20000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D10000000000000000000002 /* LifeAlarmWidgetExtension */;
+			targetProxy = E10000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		H20000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		H20000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		H20000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LifeAlarm/LifeAlarm.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "생활 알림";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.lifealarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		H20000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LifeAlarm/LifeAlarm.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "생활 알림";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.lifealarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		H20000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LifeAlarmWidget/LifeAlarmWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LifeAlarmWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "오늘 할 일";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.lifealarm.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		H20000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LifeAlarmWidget/LifeAlarmWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LifeAlarmWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "오늘 할 일";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.lifealarm.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		H10000000000000000000001 /* Build configuration list for PBXProject "LifeAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				H20000000000000000000001 /* Debug */,
+				H20000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		H10000000000000000000003 /* Build configuration list for PBXNativeTarget "LifeAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				H20000000000000000000003 /* Debug */,
+				H20000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		H10000000000000000000004 /* Build configuration list for PBXNativeTarget "LifeAlarmWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				H20000000000000000000005 /* Debug */,
+				H20000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A10000000000000000000001 /* Project object */;
+}
