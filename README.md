@@ -204,14 +204,21 @@ curl -X POST https://YOUR.onrender.com/schedule \
 ## 8) 실제 자동 발송 확인 방법
 
 1. Render 로그: Dashboard → 서비스 → **Logs**  
-   `[scheduler] sent: 월세 @ 8:00` 확인  
-2. 매달 7일 08:00 (한국시간) 전에:
-   - 서버에 월세 일정이 `isEnabled: true`, `dayOfMonth: 7`, `hour: 8` 인지 확인  
-   - 앱을 꺼 두어도 서버가 보내야 정상  
-3. Free 플랜은 **약 15분 idle 후 슬립**할 수 있습니다.  
-   - 슬립 중이면 첫 요청이 깨웁니다.  
-   - 안정성이 필요하면 Render paid 또는 cron-job.org 에서 `GET /health` 5분마다 ping  
-4. 중복 방지: 같은 일정·같은 분에는 한 번만 전송 (`data/sent-log.json`)
+   시작 시 아래가 보여야 합니다.
+   ```
+   [scheduler] registered jobs:
+     - * * * * * (Asia/Seoul) — 모든 일정 매분 검사 + sleep catch-up
+     - 0 8 7 * * (Asia/Seoul) — 매달 7일 08:00 명시 실행
+   [scheduler] started successfully
+   ```
+2. `GET /health` 또는 `GET /scheduler/status` 에서 `scheduler.jobs` 확인  
+3. 매달 7일 08:00 (한국시간)에 Telegram 수신  
+4. Free 플랜 sleep 대비:
+   - 서버가 잠들면 cron도 멈춥니다.
+   - 깨어난 뒤(요청 유입·배포·health ping) **같은 날 놓친 일정은 catch-up으로 전송**합니다.
+   - 더 안정적으로 쓰려면 [cron-job.org](https://cron-job.org) 등에서 **10분마다**  
+     `https://life-alarm.onrender.com/health` 를 호출하세요.  
+   - 특히 **매달 7일 07:50~08:10** 구간에 ping이 있으면 정각 전송 확률이 높아집니다.
 
 > Render Free 디스크는 ephemeral 입니다. 재배포 시 JSON이 초기화될 수 있으니,  
 > 앱에서 **동기화**를 다시 하거나 Persistent Disk를 사용하세요.
