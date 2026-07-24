@@ -171,7 +171,10 @@ npm start
 # Health
 curl https://YOUR.onrender.com/health
 
-# Telegram 테스트
+# Telegram 테스트 (브라우저)
+curl https://YOUR.onrender.com/telegram/test
+
+# Telegram 테스트 (POST)
 curl -X POST https://YOUR.onrender.com/telegram/test
 
 # 일정 목록
@@ -226,6 +229,7 @@ curl -X POST https://YOUR.onrender.com/schedule \
 | DELETE | `/schedule/:id` | 일정 삭제 |
 | POST | `/sync` | `{ "schedules": [...] }` 전체 교체 |
 | POST | `/telegram/test` | 테스트 메시지 |
+| GET | `/telegram/test` | 브라우저 테스트 (`{"success":true}` + Telegram 전송) |
 | POST | `/telegram/send-schedule/:id` | 특정 일정 즉시 전송 |
 
 일정 JSON 예시:

@@ -57,16 +57,26 @@ router.post('/sync', (req, res) => {
   res.json({ ok: true, count: saved.length, schedules: saved });
 });
 
-/** POST /telegram/test — 즉시 테스트 전송 */
+/** GET /telegram/test — 브라우저에서 바로 확인용 */
+router.get('/telegram/test', async (_req, res) => {
+  try {
+    await sendTelegramMessage('✅ Render 테스트 성공');
+    res.json({ success: true });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+/** POST /telegram/test — 즉시 테스트 전송 (앱/curl용) */
 router.post('/telegram/test', async (req, res) => {
   try {
     const text =
       req.body?.text ||
-      '🔔 생활 알림 테스트\nRender 서버 → Telegram 연결이 정상입니다.';
-    const result = await sendTelegramMessage(text);
-    res.json({ ok: true, result });
+      '✅ Render 테스트 성공';
+    await sendTelegramMessage(text);
+    res.json({ success: true });
   } catch (err) {
-    res.status(500).json({ ok: false, error: err.message });
+    res.status(500).json({ success: false, error: err.message });
   }
 });
 
